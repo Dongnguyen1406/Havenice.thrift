@@ -1,0 +1,1 @@
+# Havenice.thrift
