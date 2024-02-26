@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/logo.svg'
+import logo from '../assets/Logo1.png'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
@@ -15,7 +15,7 @@ const Nav = () => {
       <div className='nav-center'>
         <div className='nav-header'>
           <Link to='/'>
-            <img src={logo} alt='comfy sloth' />
+            <img src={logo} alt='comfy sloth' className='custom-img' />
           </Link>
           <button type='button' className='nav-toggle' onClick={openSidebar}>
             <FaBars />
@@ -50,6 +50,7 @@ const NavContainer = styled.nav`
 
   .nav-center {
     width: 90vw;
+    height: 100px;
     margin: 0 auto;
     max-width: var(--max-width);
   }
@@ -106,6 +107,12 @@ const NavContainer = styled.nav`
     .cart-btn-wrapper {
       display: grid;
     }
+    .custom-img {
+      width: 200px;
+      height: 180px;
+      padding: 20px;
+    }   
+    
   }
 `
 
