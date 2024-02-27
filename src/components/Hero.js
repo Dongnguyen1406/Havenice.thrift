@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import heroBcg from '../assets/View1.jpg'
-import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import imagehome2 from '../assets/imagehome2.webp'
 const Hero = () => {
   return (
     <Wrapper className='section-center'>
@@ -20,7 +20,7 @@ const Hero = () => {
       </article>
       <article className='img-container'>
         <img src={heroBcg} alt='nice table' className='main-img' />
-        <img src={heroBcg2} alt='person working' className='accent-img' />
+        <img src={imagehome2} alt='person working' className='accent-img' />
       </article>
     </Wrapper>
   )
@@ -61,7 +61,7 @@ const Wrapper = styled.section`
     }
     .main-img {
       width: 100%;
-      height: 550px;
+      height: 700px;
       position: relative;
       border-radius: var(--radius);
       display: block;
@@ -71,7 +71,7 @@ const Wrapper = styled.section`
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 250px;
+      width: 400px;
       transform: translateX(-50%);
       border-radius: var(--radius);
     }
