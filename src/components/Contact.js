@@ -4,12 +4,10 @@ const Contact = () => {
   return (
     <Wrapper>
       <div className='section-center'>
-        <h3>Join our newsletter and get 20% off</h3>
+        <h3>Tham gia với chúng tôi để nhận giảm giá 20% </h3>
         <div className='content'>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            sint unde quaerat ratione soluta veniam provident adipisci cumque
-            eveniet tempore?
+          Chúng tôi rất hoan nghênh mọi ý kiến đóng góp, câu hỏi hoặc ý kiến phản hồi từ bạn! Xin vui lòng nhập địa chỉ email của bạn để nhận được thông sớm nhất về những chương trình của chúng tôi. Chúng tôi sẽ trả lời bạn trong thời gian sớm nhất có thể.
           </p>
           <form className='contact-form'>
             <input
