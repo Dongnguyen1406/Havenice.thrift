@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import heroBcg from '../assets/View1.jpg'
-import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import heroBcg2 from '../assets/View2.jpg'
 const Hero = () => {
   return (
     <Wrapper className='section-center'>
@@ -11,7 +11,7 @@ const Hero = () => {
           Welcome to Havenice.thrift  <br />
         </h1>
         <p>
-          Our motto is to bring something special to customers!
+        Điểm đến cho những tín đồ thời trang vintage và secondhand! Khám phá bộ sưu tập độc đáo của chúng tôi, từ áo quần đến phụ kiện, mỗi món đều mang một câu chuyện riêng. Hãy cùng chúng tôi tái chế và tái sử dụng, để phong cách của bạn không chỉ độc đáo mà còn bền vững.
         </p>
         <Link to='/products' className='btn hero-btn'>
           shop now

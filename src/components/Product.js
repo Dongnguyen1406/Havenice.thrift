@@ -19,18 +19,22 @@ const Product = ({ image, name, price, id }) => {
     </Wrapper>
   )
 }
+
 const Wrapper = styled.article`
   .container {
     position: relative;
+    height: 300px !important;
     background: var(--clr-black);
     border-radius: var(--radius);
   }
   img {
     width: 100%;
+    height: 300px !important;
     display: block;
     object-fit: cover;
     border-radius: var(--radius);
     transition: var(--transition);
+
   }
   .link {
     position: absolute;
@@ -73,6 +77,5 @@ const Wrapper = styled.article`
   footer p {
     color: var(--clr-primary-5);
     letter-spacing: var(--spacing);
-  }
-`
+  }`
 export default Product

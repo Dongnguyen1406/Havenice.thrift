@@ -1,58 +1,28 @@
 import React, { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useProductsContext } from '../context/products_context';
-import { single_product_url as url } from '../utils/constants';
 import { formatPrice } from '../utils/helpers';
-import {
-  Loading,
-  Error,
-  ProductImages,
-  AddToCart,
-  Stars,
-  PageHero,
-} from '../components';
+import inf from '../model/inf';
+import { ProductImages, AddToCart, Stars, PageHero } from '../components';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+
 const SingleProductPage = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
-  const {
-    single_product_loading: loading,
-    single_product_error: error,
-    single_product: product,
-    fetchSingleProduct,
-  } = useProductsContext();
+  const { fetchSingleProduct } = useProductsContext();
 
   useEffect(() => {
-    fetchSingleProduct(`${url}${id}`);
+    // Fetch product data based on the ID from the URL
+    fetchSingleProduct(`/product/${id}`);
     // eslint-disable-next-line
   }, [id]);
-  useEffect(() => {
-    if (error) {
-      setTimeout(() => {
-        navigate('/');
-      }, 3000);
-    }
-    // eslint-disable-next-line
-  }, [error]);
-  if (loading) {
-    return <Loading />;
-  }
-  if (error) {
-    return <Error />;
-  }
+  function getProductByIdFromUrl(productsData, idFromUrl) {
+    const product = productsData.find(product => product.id === idFromUrl);
+    return product ? product.value : null;
+}
+  const product = getProductByIdFromUrl(inf.productsData, id);// Sử dụng dữ liệu sản phẩm từ inf
+  const { name, price, description, stock, stars, reviews, company, images, width, length } = product;
 
-  const {
-    name,
-    price,
-    description,
-    stock,
-    stars,
-    reviews,
-    id: sku,
-    company,
-    images,
-  } = product;
   return (
     <Wrapper>
       <PageHero title={name} product />
@@ -72,8 +42,12 @@ const SingleProductPage = () => {
               {stock > 0 ? 'In stock' : 'out of stock'}
             </p>
             <p className='info'>
-              <span>SKU :</span>
-              {sku}
+              <span>Length :</span>
+              {length}
+            </p>
+            <p className='info'>
+              <span>Width :</span>
+              {width}
             </p>
             <p className='info'>
               <span>Brand :</span>
@@ -87,6 +61,7 @@ const SingleProductPage = () => {
     </Wrapper>
   );
 };
+
 
 const Wrapper = styled.main`
   .product-center {

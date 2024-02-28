@@ -15,7 +15,7 @@ const Nav = () => {
       <div className='nav-center'>
         <div className='nav-header'>
           <Link to='/'>
-            <img src={logo} alt='comfy sloth' className='custom-img' />
+            <img src={logo} alt='Havenice.thrift' className='custom-img' />
           </Link>
           <button type='button' className='nav-toggle' onClick={openSidebar}>
             <FaBars />
@@ -59,7 +59,7 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: 175px;
+      width: 125px;
       margin-left: -15px;
     }
   }
@@ -108,9 +108,9 @@ const NavContainer = styled.nav`
       display: grid;
     }
     .custom-img {
-      width: 200px;
-      height: 180px;
+      height: 100px;
       padding: 20px;
+      object-fit: cover;
     }   
     
   }
