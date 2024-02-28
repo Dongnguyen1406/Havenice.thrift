@@ -7,12 +7,10 @@ const Services = () => {
       <div className='section-center'>
         <article className='header'>
           <h3>
-            custom furniture <br /> built only for you
+          Our Journey and Purpose <br /> built only for you
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum debitis consectetur reprehenderit non aliquam voluptates
-            dolore aut vero consequuntur.
+          "Our Journey and Purpose" gói gọn cam kết của chúng tôi trong việc chia sẻ sứ mệnh, tầm nhìn và câu chuyện lịch sử, hướng dẫn con đường phía trước của chúng tôi đồng thời tôn vinh những kinh nghiệm và thành tựu trong quá khứ của chúng tôi.
           </p>
         </article>
         <div className='services-center'>

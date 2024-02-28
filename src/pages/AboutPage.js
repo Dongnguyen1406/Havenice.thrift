@@ -1,29 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import { PageHero } from '../components'
-import aboutImg from '../assets/hero-bcg.jpeg'
+import imageabout from '../assets/imageabout.jpg'
 const AboutPage = () => {
   return (
     <main>
       <PageHero title='about' />
       <Wrapper className='page section section-center'>
-        <img src={aboutImg} alt='nice desk' />
+        <img src={imageabout} alt='nice desk' />
         <article>
           <div className='title'>
             <h2>our story</h2>
             <div className='underline'></div>
           </div>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-            accusantium sapiente tempora sed dolore esse deserunt eaque
-            excepturi, delectus error accusamus vel eligendi, omnis beatae.
-            Quisquam, dicta. Eos quod quisquam esse recusandae vitae neque
-            dolore, obcaecati incidunt sequi blanditiis est exercitationem
-            molestiae delectus saepe odio eligendi modi porro eaque in libero
-            minus unde sapiente consectetur architecto. Ullam rerum, nemo iste
-            ex, eaque perspiciatis nisi, eum totam velit saepe sed quos
-            similique amet. Ex, voluptate accusamus nesciunt totam vitae esse
-            iste.
+          Chúng tôi là [ Havenice.thrift
+], nơi mang đến cho bạn những trải nghiệm thời trang độc đáo và bền vững. Bắt nguồn từ đam mê với thế giới thời trang vintage và secondhand, chúng tôi đã hình thành một câu chuyện đầy cảm hứng và ý nghĩa. Tại đây, chúng tôi không chỉ cung cấp các sản phẩm chất lượng mà còn lan tỏa thông điệp về việc bảo vệ môi trường và tôn trọng lịch sử thời trang. Hãy cùng chúng tôi khám phá hành trình đặc biệt này và kết nối qua những mảnh ghép độc đáo của chúng tôi.
           </p>
         </article>
       </Wrapper>

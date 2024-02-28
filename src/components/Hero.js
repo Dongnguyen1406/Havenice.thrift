@@ -11,7 +11,7 @@ const Hero = () => {
           Welcome to Havenice.thrift  <br />
         </h1>
         <p>
-        Điểm đến cho những tín đồ thời trang vintage và secondhand! Khám phá bộ sưu tập độc đáo của chúng tôi, từ áo quần đến phụ kiện, mỗi món đều mang một câu chuyện riêng. Hãy cùng chúng tôi tái chế và tái sử dụng, để phong cách của bạn không chỉ độc đáo mà còn bền vững.
+          Điểm đến cho những tín đồ thời trang vintage và secondhand! Khám phá bộ sưu tập độc đáo của chúng tôi, từ áo quần đến phụ kiện, mỗi món đều mang một câu chuyện riêng. Hãy cùng chúng tôi tái chế và tái sử dụng, để phong cách của bạn không chỉ độc đáo mà còn bền vững.
         </p>
         <Link to='/products' className='btn hero-btn'>
           shop now
